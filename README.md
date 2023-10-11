@@ -1,5 +1,6 @@
 # Valgrind Exercise
-
+## Author:
+Vyshnav Achuthan - (Achuthankrishna)
 ## Standard install via command-line
 ```bash
 # Configure the project and generate a native build system:
@@ -19,4 +20,10 @@
 # Clean and start over:
   rm -rf build/
 ```
+## What happens when the executable is linked statically?  Does Valgrind still detect those same bugs?
+* When an executable is linked statically, all the necessary libraries are included in the executable itself , and thats not how dynamic linking works. 
+* Valgrind is designed for dynamic linking purposes ,as it can intercept memory allocations and deallocations. When valgrind is ran on static exectubales , it might not be able to generate high level details as it doesn't have same level of access as it had in dyamic linked executables.
+* Valgring can still detect uninitalised variables but it can't give details on memory leaks and allocations , and any issues related to system libraries.
+
+********************************************************************************************************************************
 
