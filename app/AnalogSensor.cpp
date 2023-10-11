@@ -1,4 +1,6 @@
-#include <AnalogSensor.hpp>
+//Changed <> to "" for loading .hpp file 
+#include "AnalogSensor.hpp"
+
 #include <numeric>
 #include <vector>
 
