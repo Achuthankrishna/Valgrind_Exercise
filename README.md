@@ -25,5 +25,8 @@ Vyshnav Achuthan - (Achuthankrishna)
 * Valgrind is designed for dynamic linking purposes ,as it can intercept memory allocations and deallocations. When valgrind is ran on static exectubales , it might not be able to generate high level details as it doesn't have same level of access as it had in dyamic linked executables.
 * Valgring can still detect uninitalised variables but it can't give details on memory leaks and allocations , and any issues related to system libraries.
 
+Why or why not? Accessibility Issues: Valgrind doesn't have access in libraries which are statically linked, because it can't track code which are not part of the dynamically linked executables.
+
+
 ********************************************************************************************************************************
 
