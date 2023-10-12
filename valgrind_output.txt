@@ -1,3 +1,4 @@
+achukrish@AK07:~/ENPM808X/Valgrind_Exercise$ valgrind --leak-check=full ./build/app/shell-app > valgrind_output.txt 2>&1
 ==5340== Memcheck, a memory error detector
 ==5340== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
 ==5340== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
